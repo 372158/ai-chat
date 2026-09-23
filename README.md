@@ -4,7 +4,7 @@
 | ------- | ------------- | --------------- |
 | Web框架 | Gin           | 路由 + 中间件   |
 | ORM     | GORM          | MySQL 读写      |
-| 数据库  | MsSQL(Docker) | 会话缓存 + 限流 |
+| 数据库  | MySQL (Docker) | 会话缓存 + 限流 |
 | LLM     | 智谱 GLM      | OpenAI 兼容协议 |
-| 流式    | SEE           | 打字机          |
+| 流式    | SSE           | 打字机          |
 
