@@ -3,7 +3,7 @@ package handler
 import (
 	"net/http"
 
-	"github.com/gin-gonic/gin"// 为了用 http.StatusOK 这个常量
+	"github.com/gin-gonic/gin"
 )
 
 // echoReq：请求体长什么样。反引号 json 标签 = 翻译条，把 JSON 里的 "message" 对到 Go 的 Message 字段
@@ -39,6 +39,7 @@ func Echo(c *gin.Context) {
 }
 
 // RegisterRoutes：所有路由的「落户」都在这里登记
-func RegisterRouters(r *gin.Engine) {
+func RegisterRoutes(r *gin.Engine) {
 	r.GET("/health", Health)   // 来访 /health 的 GET 请求 → 交给 Health 处理
+	r.POST("/echo", Echo)     // 来访 /echo 的 POST 请求 → 交给 Echo 处理
 }
